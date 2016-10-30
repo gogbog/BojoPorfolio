@@ -146,6 +146,8 @@ px      68    160    252    344    436    528    620    712    */
   #features-contact .block ul li {
     width: 49%;
   }
+
+
   /*---------------------------------------------
 					contact close 
 -----------------------------------------------*/
@@ -183,11 +185,13 @@ px      68    160    252    */
     padding-left: 0px;
   }
   #slider .block h1 {
-    font-size: 20px;
+    font-size: 47px;
   }
   #slider .block p {
-    font-size: 13px;
+    font-size: 18px;
   }
+
+
   /*--
 	wrapper Start 
 --*/
@@ -387,6 +391,27 @@ px      68    160    252    */
     display: none;
   }
 }
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span:first-child {
+    margin-left: -30px;
+    width: 125px;
+}
+
+.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-time {
+    right: -161px;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-time {
+    left: -129px;
+}
+
+#global-header .block h1 {
+    font-size: 41px;
+}
+
+.timeline-centered {
+    padding: 0 14px;
+}
 /*		Wide Mobile Layout: 480px.
 		Gutters: 24px.
 		Outer margins: 22px.
@@ -398,3 +423,29 @@ px      68    160    252    344    436    */
 	Overrides styles for devices with a 
 	device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
+
+@media only screen and (min-width: 767px) {
+
+    .first {
+        background-position-y: -201px;
+    }
+
+    .third {
+
+        background-position-y: -249px;
+    }
+
+    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span:first-child {
+        margin-left: -30px;
+        width: auto;
+    }
+
+    .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-time {
+        right: -206px;
+    }
+
+    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time {
+        left: -129px;
+    }
+
+}

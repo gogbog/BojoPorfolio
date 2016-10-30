@@ -375,7 +375,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .first {
   background: url("../img/slider-bg3.jpg") no-repeat;
-  background-position-y: -201px;
+
 }
 
 .second {
@@ -384,7 +384,7 @@ font header .navbar-default .navbar-nav li a:hover {
 
 .third {
   background: url("../img/slider-bg4.jpg") no-repeat;
-    background-position-y: -249px;
+
 }
 #global-header:before {
   content: "";
@@ -1122,4 +1122,20 @@ img
 }
 
 
+/*
+@media only screen and (max-width: 768px) {
 
+  .timeline-entry-inner
+  {
+    padding-right:30px;
+  }
+
+  .timeline-entry-inner
+  {
+    padding-left:30px;
+  }
+}
+
+
+
+*/
