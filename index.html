@@ -39,6 +39,7 @@
     <script src="js/main.js"></script>
 -->
 
+
   </head>
   <body>
 
@@ -62,18 +63,32 @@
     </section>
 
     <!-- Wrapper Start -->
-    <section id="intro">
+    <section>
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
+        <div id="needed" style="overflow: hidden;" class="row">
+          <div class="col-md-8 col-sm-8" id="intro">
             <div class="block">
               <div class="section-title">
                 <h2>About Me</h2>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
               </div>
               <p>An experienced bartender with a strong interest in flair, mixology and barista. Fully committed to this art with innovate thinking and great communication skills that customers will love. Always eager to learn more tricks from anyone.</p>
+
             </div>
           </div><!-- .col-md-7 close -->
+            <div class="col-md-4 col-sm-4">
+                <div id="toExecute" class="block">
+
+
+                    <div style="width: 30px; height:30px;border-style:none; position:absolute; bottom: 30px; right: 36px;" class="bottle" data-rellax-speed="5">
+                        <img src="img/wine.png" width="120" height="180">
+                    </div>
+                    <div style="width: 30px; height:30px;border-style:none; position:absolute; bottom: 80px; right: 90px;" >
+                        <img src="img/wine_glass.png" width="50" height="120">
+                    </div>
+                </div>
+            </div><!-- .col-md-7 close -->
+
 
         </div>
       </div>
@@ -273,10 +288,19 @@
         </div>
       </div>
     </footer>
-            
-            
-  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-            
-    
+    <script>
+        var h = document.getElementById('needed').clientHeight;
+        document.getElementById('toExecute').setAttribute("style","height:"+h+"px");
+    </script>
+
+    <script type="text/javascript" src="js/rellax.min.js"></script>
+
+
+
+    <script>
+        var rellax = new Rellax('.bottle');
+
+    </script>
+
     </body>
 </html>
